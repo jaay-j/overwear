@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta heep-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> OVERWEAR </title>
+    
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://use.typekit.net/qmu1gog.css">
+    <script src="javascript/p5.min.js"></script>
+    <script src="javascript/java.js"></script>
+    <script src="javascript/p5.anims.min.js"></script>
+
+<style>
+    body {
+        background-image: url('BG.png');
+    }   
+    
+    * { 
+			padding: 0;
+			margin:  0;
+		}
+
+		header {
+			height:  7vh;
+			background-color: #62b766;
+			font-family: "condor-extended", sans-serif;
+			font-weight: 700;
+			font-size: 30px;
+			text-align: center;
+			padding-top: 20px;
+			font-style: normal;
+            border: 2px solid black;
+		}
+    
+    </style>
+
+
+</head>
+
+
+
+<body>
+
+	<header>
+		<ul class="nav">
+			<li><a href="../index.html">OVERWEAR</a></li>
+		   </ul>
+	</header>
+
+
+    <style>
+        @keyframes fadeInUp {
+            0%{
+                opacity: 0;
+                border: none;
+                transform: traslate3d(0, 100%, 0);
+            }
+            to{
+                opacity: 1;
+                boder: none;
+                transform: translateZ(0);
+            }
+        }
+
+        .text{
+            position: relative;
+            animation: fadeInUp 5s;
+            text-align: center;
+            font-family: "gopher", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+            font-size: 100px;
+            top: 30px;
+            border: none;
+        }
+
+        .trashbin {
+            position: absolute; 
+            top: 300px; 
+            left: 300px; 
+            border: none;
+        }
+
+        .box1 {
+            border: 2px white solid;
+            background-color: transparent;
+            width: 300px;
+            height: 100px;
+            position: absolute;
+            bottom: 80px;
+            left: 550px;
+        }
+
+        .box2 {
+            width: 10px;
+            height: 100px;
+            background: rgba(175, 61, 61, 0.582);
+            transition: width 2s;
+            bottom: 82px; 
+            left: 552px;
+        }
+
+        .box2:hover {
+            width: 249px;
+        }
+
+
+
+
+    </style>
+
+<div class="text">Every year, 85% of textiles ends up in landfill.</div>
+
+<div class="container">
+    <div class="trashbin">
+        <img src="trashbin-01.png" width="70%"></img></div>
+    <div class="box1"></div>
+    <div class="box2"></div>    
+</div>
+
+<button class="button1" onclick="document.location.href='../data 2/index.html'">WASTED</button>
+
+</body>
+</html>

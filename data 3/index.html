@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://use.typekit.net/qmu1gog.css">
+       
+	<title>OVERWEAR</title>
+	<style>
+
+      
+        @keyframes riseup {
+            0% { margin-top: 100%; }
+            30% { margin-top: 60%; }
+            70% { margin-top: 10%; }
+            100% {margin-top: 5%; }
+        }
+
+		* { 
+			padding: 0;
+			margin:  0;
+		}
+		div {
+			border:  1px solid black;
+		}
+		header {
+			height:  7vh;
+			background-color: #62b766;
+			font-family: "condor-extended", sans-serif;
+			font-weight: 700;
+			font-size: 30px;
+			text-align: center;
+			padding-top: 20px;
+			font-style: normal;
+        }
+
+		
+
+
+		.container {
+			height: 90vh;
+			width: 100%;
+			display:  grid;
+			grid-template-columns: 20% 20.8% 59.2%; 
+		}
+
+		.side-bar {
+            font-family: "gopher", sans-serif;
+			font-weight: 900;
+			font-style: normal;
+			padding: 5px;
+            border: 0px;
+            position: relative;
+            border: 0px;
+			text-align: left;
+            padding-left: 30px;
+            padding-top: 20px;
+            background-color: #ddfade;
+		}
+                .side-text1 {
+                position: absolute;
+                border: 0px;
+                font-family: "gopher", sans-serif;
+			    font-weight: 900;
+			    font-style: normal;
+                font-size: 45px;
+                line-height: 50px;
+                }
+
+                .side-text2 {
+                position: absolute;
+                border: 0px;
+                font-family: "gopher", sans-serif;
+                font-weight: 100;
+                font-style: normal;
+                font-size: 20px;
+                padding-top: 380px;
+                line-height: 40px;
+                }
+
+				.button {
+            position: absolute;
+            font-family: "condor-extended", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 30px;
+            background-color: transparent;
+            padding: 5px;
+            bottom: 40px;
+            }
+
+            .button:hover {
+                background-color:#62b766;
+                color: white;
+            }
+        
+        .water1 {
+			position: relative;
+			background-color: rgb(22, 66, 36);
+		}  
+
+        .water2 {
+            position: relative;
+            background-color: rgb(22, 66, 36);
+        }
+
+        .bar-text {
+            position: absolute;
+            bottom: 0;
+            border: 0px;
+            font-family: "gopher", sans-serif;
+			font-weight: 900;
+			font-style: normal;
+            font-size: 70px; 
+            padding-left: 20px;
+        }
+
+
+        .box1 {
+            width: 100%;
+            height: 80px;
+            background: rgb(84, 152, 255);
+            transition: height 2s;
+            position: absolute;
+            bottom: 0;
+
+        }
+
+        .box1:hover {
+            height: 95%;
+        }
+
+        .box2 {
+            width: 100%;
+            height: 80px;
+            background: rgb(16, 55, 171);
+            transition: height 2s;
+            position: absolute;
+            bottom: 0;  
+        }
+
+        .box2:hover {
+            height: 95%;
+        }
+
+        .shirt {
+            position: absolute;
+            border: 0px;
+            top: 230px;
+            left: 120px;
+            
+        }
+
+        .shirt:hover {
+            transform: rotate(360deg);
+            transform-origin: bottom left;
+            transition: transform .7s ease-in-out;
+        }
+
+        .jeans {
+            position: absolute;
+            border: 0px;
+            top: 230px;
+            left: 400px;
+        }
+
+        .jeans:hover {
+            transform: rotate(360deg);
+            transform-origin: bottom left;
+            transition: transform .7s ease-in-out;
+        }
+  
+
+	</style>
+</head>
+<body>
+
+	<header>
+		<ul class="nav">
+			<li><a href="../index.html">OVERWEAR</a></li>
+		   </ul>
+	</header>
+
+	<div class="container">
+		<div class="side-bar">
+			<div class="side-text1">700 Gal for a cotton shirt
+                <br><br>
+                2000 Gal for a pair of jeans
+            </div>
+            <div class="side-text2">Gallons of water needed to produce a piece of clothing</div>
+        <button class="button"
+		type="button"
+		onclick="document.location.href='../data 4/index.html'">What?!</button>
+		</div>
+
+		<div class="water1">
+            <div class="box1"></div>
+            <div class="bar-text"> 700 Gal</div>
+            <div class="shirt"> <img src="shirt.png" width="35%"></img></div>
+		</div>	
+
+        <div class="water2">
+            <div class="box2"></div>
+            <div class="bar-text">2000 Gal</div>
+            <div class="jeans"> <img src="jeans.png" width="8%"></img></div>
+        </div>
+
+	</div>
+	
+
+
+	
+    <script>
+	</script>
+
+</body>
+</html>

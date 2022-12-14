@@ -1,0 +1,30 @@
+
+
+
+
+
+
+body {
+    font-family: 'gopher', sans-serif;
+    font-weight: 900;
+    
+}
+
+
+.button1 {
+    position: absolute;
+    bottom: 150px;
+    background: transparent;
+    border: 0px;
+    bottom: 110px;
+    left: 565px;
+    font-size:35px;
+    font-family: 'condor-extended', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+}
+
+.button1:hover {
+    color: red;
+}

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.typekit.net/lqe1mig.css">
+
+	<script src="jquery/jquery-3.6.1.min.js"></script>
+	<script src="jquery/jquery.js">
+	</script>
+
+	<title>OVERWEAR</title>
+	<style>
+		/* Remove default browser spacing */
+		* { 
+			padding: 0;
+			margin:  0;
+		}
+		div {
+			border:  1px solid black;
+		}
+		header {
+			height:  7vh;
+			background-color: #62b766;
+			font-family: "condor-extended", sans-serif;
+			font-weight: 700;
+			font-size: 30px;
+			text-align: center;
+			padding-top: 20px;
+			font-style: normal;
+		}
+
+		.ootd {
+			position: relative;
+			background-color: #62b766;
+		}  
+
+		.trash-bin {
+		color: green;
+		}
+
+		.button {
+		position: absolute;
+		font-family: "condor-extended", sans-serif;
+		font-weight: 700;
+		font-style: normal;
+		font-size: 30px;
+		background-color: transparent;
+		padding: 5px;
+		bottom: 40px;
+		right: 190px;
+		}
+
+		.button:hover {
+			background-color:#62b766;
+			color: white;
+		}
+
+		.container {
+			height: 90vh;
+			width: 100%;
+			display:  grid;
+			grid-template-columns: 30% 70%;
+		}
+		.side-bar {
+			display: grid;
+			text-align: center;
+		}
+
+		.searchbar {
+			font-family: "condor-extended", sans-serif;
+			font-weight: 700;
+			font-style: normal;
+			padding: 5px;
+		}
+			.side-bar-top {
+				position: relative; /* When an element is position relative, any children using position absolute will be positioned inside it */
+			}
+			.top-tag {
+				position: absolute; /* Since the parent element (.side-bar-top) has position relative, using position absolute means the #top will be positioned inside the side-bar-top box */
+				left: 10px;
+				top: 40px;
+				font-family: "condor-extended", sans-serif;
+				font-weight: 700;
+				font-style: normal;
+				padding: 5px;
+			}
+			.brand-tag {
+				position: absolute;
+				left: 10px;
+				bottom: 10px;
+				font-family: "condor-extended", sans-serif;
+				font-weight: 700;
+				font-style: normal;
+				padding: 5px;
+			}
+			.next-top1 {
+				position: absolute;
+				top: 80px;
+				right: 10px;
+				padding-right: 5px;
+				padding-left: 5px;
+				font-family: "condor-extended", sans-serif;
+				font-weight: 700;
+				font-style: normal;
+			} 
+			.next-top2 {
+				position: absolute;
+				top: 120px;
+				right: 10px;
+				padding-right: 5px;
+				padding-left: 5px;
+				font-family: "condor-extended", sans-serif;
+				font-weight: 700;
+				font-style: normal;
+			} 
+
+				.button {
+					align-content: center;
+					padding-left: 30px;
+					padding-right: 30px;
+				}
+
+				.button1 {
+					position: absolute;
+					top: 80px;
+					right: 10px;
+					font-family: "condor-extended", sans-serif;
+					border: 2px solid black;
+					background-color: transparent;
+					align-content: center;
+					font-size: 15px;
+					padding: 5px;
+				}
+
+				.button1:hover{
+					background: #62b766;
+					color: white;
+				}
+
+				.button2 {
+					position: absolute;
+					top: 120px;
+					right: 10px;
+					font-family: "condor-extended", sans-serif;
+					border: 2px solid black;
+					background-color: transparent;
+					align-content: center;
+					font-size: 15px;
+					padding: 5px;
+				}
+
+				.button2:hover{
+					background: #62b766;
+					color: white;
+				}
+
+				.button3 {
+					position: absolute;
+					top: 160px;
+					right: 10px;
+					font-family: "condor-extended", sans-serif;
+					border: 2px solid black;
+					background-color: transparent;
+					align-content: center;
+					font-size: 15px;
+					padding: 5px;
+				}
+
+				.button3:hover{
+					background: #62b766;
+					color: white;
+				}
+
+				.button4 {
+					position: absolute;
+					top: 200px;
+					right: 10px;
+					font-family: "condor-extended", sans-serif;
+					border: 2px solid black;
+					background-color: transparent;
+					align-content: center;
+					font-size: 15px;
+					padding: 5px;
+				}
+
+				.button4:hover{
+					background: #62b766;
+					color: white;
+				}
+
+				.button4-2 {
+					position: absolute;
+					top: 240px;
+					right: 10px;
+					font-family: "condor-extended", sans-serif;
+					border: 2px solid black;
+					background-color: transparent;
+					align-content: center;
+					font-size: 15px;
+					padding: 5px;
+				}
+
+				.button4-2:hover{
+					background: #62b766;
+					color: white;
+				}
+
+	
+		.side-bar-bottom {
+			position: relative;
+		} 
+		.bottom-tag {
+			position: absolute;
+			left: 10px;
+			bottom: 260px;
+			font-family: "condor-extended", sans-serif;
+			font-weight: 700;
+			font-style: normal;
+			padding: 5px;
+		}
+		.brand-tag-b {
+			position: absolute;
+			left: 10px;
+			bottom: 10px;
+			font-family: "condor-extended", sans-serif;
+			font-weight: 700;
+			font-style: normal;
+			padding: 5px;
+		}
+		.next-bottom {
+			position: absolute;
+			bottom: 20px;
+			right: 10px;
+			padding-right: 5px;
+			padding-left: 5px;
+			font-family: "condor-extended", sans-serif;
+			font-weight: 700;
+			font-style: normal;
+		}
+
+				.button5 {
+					position: absolute;
+					top: 80px;
+					right: 10px;
+					font-family: "condor-extended", sans-serif;
+					border: 2px solid black;
+					background-color: transparent;
+					align-content: center;
+					font-size: 15px;
+					padding: 5px;
+				}
+
+				.button5:hover{
+					background: #62b766;
+					color: white;
+				}
+
+				.button6 {
+					position: absolute;
+					top: 120px;
+					right: 10px;
+					font-family: "condor-extended", sans-serif;
+					border: 2px solid black;
+					background-color: transparent;
+					align-content: center;
+					font-size: 15px;
+					padding: 5px;
+				}
+
+				.button6:hover{
+					background: #62b766;
+					color: white;
+				}
+
+				.button7 {
+					position: absolute;
+					top: 160px;
+					right: 10px;
+					font-family: "condor-extended", sans-serif;
+					border: 2px solid black;
+					background-color: transparent;
+					align-content: center;
+					font-size: 15px;
+					padding: 5px;
+				}
+
+				.button7:hover{
+					background: #62b766;
+					color: white;
+				}
+
+				.button8 {
+					position: absolute;
+					top: 200px;
+					right: 10px;
+					font-family: "condor-extended", sans-serif;
+					border: 2px solid black;
+					background-color: transparent;
+					align-content: center;
+					font-size: 15px;
+					padding: 5px;
+				}
+
+				.button8:hover{
+					background: #62b766;
+					color: white;
+				}
+
+				.button8-2 {
+					position: absolute;
+					top: 240px;
+					right: 10px;
+					font-family: "condor-extended", sans-serif;
+					border: 2px solid black;
+					background-color: transparent;
+					align-content: center;
+					font-size: 15px;
+					padding: 5px;
+				}
+
+				.button8-2:hover{
+					background: #62b766;
+					color: white;
+				}
+
+
+
+	</style>
+</head>
+<body>
+
+	<header>
+		<ul class="nav">
+			<li><a href="../index.html">OVERWEAR</a></li>
+		   </ul>
+	</header>
+
+	<div class="container">
+		<div class="side-bar">
+			<div class="side-bar-top">
+				<div class="searchbar">In My Closet</div>
+				<div class="top-tag">#top</div>
+					<img id="change-top" src="img/img-top/800-01.png" onclick="func()" width="65%" alt="" />
+				<div class="brand-tag">#uniqlo</div>
+				<button class="button1">TOP 1</button>
+				<button class="button2">TOP 2</button>
+				<button class="button3">TOP 3</button>
+				<button class="button4">TOP 4</button>
+			</div>
+
+			<div class="side-bar-bottom">
+				<div class="bottom-tag">#Bottom</div>
+					<img id="change-bot" src="img/img-bot/800-05.png" onclick="func()" width="65%" alt="" />
+				<div class="brand-tag">#H&M</div>
+				<button class="button5">BOTTOM 1</button>
+				<button class="button6">BOTTOM 2</button>
+				<button class="button7">BOTTOM 3</button>
+				<button class="button8">BOTTOM 4</button>
+			</div>
+		</div>
+
+		<div class="ootd">
+			<div style="position: relative;">
+			<img src="img/BG.png" width="100%"></img>
+			</div>
+				<div style="position: absolute; top: 150px; left: 50px; border: 0px;">
+					<img src="img/text-rule-01.png" width="38%"></img>
+				</div>
+				<div style="position: absolute; bottom: 20px; left: 270px; border: 0px;">
+					<img src="img/figure-14.png" width="57%"></img>
+				<div style="position: absolute; border: 0px; bottom: 110px; left: 300px;">
+					<img src="img/trash-01.png" width="95%" class="trash-bin"></img>
+				</div>
+
+				<button class="button"
+				type="button"
+				onclick="document.location.href='../data 1/index.html'">GO!</button>
+
+				</div>
+
+		</div>	
+	</div>
+	
+
+
+	
+    <script>
+       // $('.trash-bin').on('click',function () {
+    	//    $(this).hide();
+        // })
+        // $('.remove-top').on('click',function() {
+		//	$('.top1').hide();
+        // })
+
+    </script>  
+
+	<script type="text/javascript">
+		function func() {
+			alert('Not cool enough... I guess I can choose another one. Keep browsing.');
+		}
+	</script>
+
+</body>
+</html>
